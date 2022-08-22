@@ -28,6 +28,7 @@ document.getElementById('mbappe-btn').addEventListener('click', function () {
     li.innerText = 'Kylian Mbappé';
     messilist.appendChild(li);
 })
+
 document.getElementById('salah-btn').addEventListener('click', function () {
     const messilist = document.getElementById('player-list');
     const li = document.createElement('li');
