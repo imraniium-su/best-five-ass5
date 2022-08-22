@@ -10,12 +10,12 @@
 </head>
 
 <body class="bg-stone-900">
-    <header class=" m-6" id="header">
+    <header class=" mx-6  " id="header">
         <h1 class=" text-6xl font-bold  text-center pt-32  text-amber-600"><span>WELCOME TO</span><br>
             MIGHTY STORMS SPORTS CLUB
         </h1>
     </header>
-    <main class="mb-20">
+    <main class="mb-20 mt-6">
         <div class="m-6 w-10/12 mx-auto flex gap-4 ">
             <div class=" w-3/4 flex-auto ">
                 <div class="grid grid-cols-3 gap-4">
@@ -28,7 +28,8 @@
                         <h2 class="text-3xl text-center mt-3">leo Messi</h2>
                         <p class="text-center "><span class="mr-4">* 32 goals</span> <span>* 120 Assist</span></p><br>
                         <span class="flex justify-center pb-4"><button
-                                class=" bg-sky-800 rounded-md py-1 px-10 text-2xl text-white font-medium">SELECT</button></span>
+                                class=" bg-sky-800 rounded-md py-1 px-10 text-2xl text-white font-medium"
+                                id="messi-btn">SELECT</button></span>
 
                     </div>
                     <div
@@ -40,7 +41,8 @@
                         <h2 class="text-3xl text-center mt-3">Cristiano Ronaldo</h2>
                         <p class="text-center "><span class="mr-4">* 45 goals</span> <span>* 150 Assist</span></p><br>
                         <span class="flex justify-center pb-2"><button
-                                class=" bg-sky-800 rounded-md py-1 px-10 text-2xl text-white font-medium">SELECT</button></span>
+                                class=" bg-sky-800 rounded-md py-1 px-10 text-2xl text-white font-medium"
+                                id="ronaldo-btn">SELECT</button></span>
 
                     </div>
                     <div
@@ -52,7 +54,8 @@
                         <h2 class="text-3xl text-center mt-3">Neymar Jr</h2>
                         <p class="text-center "><span class="mr-4">* 40 goals</span> <span>* 130 Assist</span></p><br>
                         <span class="flex justify-center pb-2"><button
-                                class="  bg-sky-800 rounded-md py-1 px-10 text-2xl text-white font-medium">SELECT</button></span>
+                                class="  bg-sky-800 rounded-md py-1 px-10 text-2xl text-white font-medium"
+                                id="neymer-btn">SELECT</button></span>
 
                     </div>
                     <div
@@ -64,7 +67,8 @@
                         <h2 class="text-3xl text-center mt-3">Shakib Al Hasan</h2>
                         <p class="text-center "><span class="mr-4">* 300 Match</span> <span>* All Rounder</span></p><br>
                         <span class="flex justify-center pb-2"><button
-                                class="  bg-sky-800 rounded-md py-1 px-10 text-2xl text-white font-medium">SELECT</button></span>
+                                class="  bg-sky-800 rounded-md py-1 px-10 text-2xl text-white font-medium"
+                                id="sakib-btn">SELECT</button></span>
 
                     </div>
                     <div
@@ -76,7 +80,8 @@
                         <h2 class="text-3xl text-center mt-3">Kylian Mbappé</h2>
                         <p class="text-center "><span class="mr-4">* 38 goals</span> <span>* 135 Assist</span></p><br>
                         <span class="flex justify-center pb-2"><button
-                                class="  bg-sky-800 rounded-md py-1 px-10 text-2xl text-white font-medium">SELECT</button></span>
+                                class="  bg-sky-800 rounded-md py-1 px-10 text-2xl text-white font-medium"
+                                id="mbappe-btn">SELECT</button></span>
 
                     </div>
                     <div
@@ -88,7 +93,8 @@
                         <h2 class="text-3xl text-center mt-3">Mohamed Salah</h2>
                         <p class="text-center "><span class="mr-4">* 42 goals</span> <span>* 140 Assist</span></p><br>
                         <span class="flex justify-center pb-2"><button
-                                class="  bg-sky-800 rounded-md py-1 px-10 text-2xl text-white font-medium">SELECT</button></span>
+                                class="  bg-sky-800 rounded-md py-1 px-10 text-2xl text-white font-medium"
+                                id="salah-btn">SELECT</button></span>
 
                     </div>
 
@@ -99,10 +105,8 @@
             <div class="w-1/4  flex-auto ">
                 <div class="bg-neutral-800 text-white rounded-lg p-6 pl-8">
                     <h2 class="text-3xl text-center font-semibold ">Selected V</h2>
-                    <ol class="list-decimal mt-2 ml-5">
-                        <li>Coffee</li>
-                        <li>Tea</li>
-                        <li>Milk</li>
+                    <ol class="list-decimal mt-2 ml-5" id="player-list">
+
                     </ol>
 
                 </div>
@@ -113,7 +117,7 @@
                     <span class="flex justify-center my-4"><button
                             class="  bg-sky-800 rounded-md py-1 px-8 text-2xl text-white font-medium"
                             id="btn-calculate">Calculate</button></span>
-                    <h3 class="text-center mt-6 text-2xl">Player Expness : <span id="total-expence"></span> </h3>
+                    <h3 class="text-center my-5 text-2xl ">Player Expness : <span id="total-expence"></span> </h3>
                     <label for="" class="flex justify-center gap-3 py-2">Manager : <input id="input-income"
                             type="number" class="rounded-md text-black"></label>
                     <label for="" class="flex justify-center gap-3 py-2">Coach : <input id="input-income" type="number"
@@ -132,6 +136,7 @@
 
     <hr class="text-gray-400 mb-10">
     <p class="text-slate-300 text-center my-8">Copyright @ All Right Reserved</p>
+    <script src="club.js"></script>
 
 </body>
 
