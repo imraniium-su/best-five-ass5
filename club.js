@@ -6,7 +6,7 @@ function selV() {
     if (li.length < 5) {
         return true;
     } else {
-        alert('Hi');
+        alert('You already selected your Best V');
         return false;
     }
 }
@@ -15,7 +15,7 @@ document.getElementById('messi-btn').addEventListener('click', function () {
     if (selV()) {
         const messilist = document.getElementById('player-list');
         const li = document.createElement('li');
-        li.innerText = 'Leo Messi';
+        li.innerText = 'Leonel Messi';
         messilist.appendChild(li);
         const btn = document.getElementById('messi-btn');
         btn.disabled = 'true';
@@ -49,7 +49,7 @@ document.getElementById('sakib-btn').addEventListener('click', function () {
     if (selV()) {
         const messilist = document.getElementById('player-list');
         const li = document.createElement('li');
-        li.innerText = 'Shakib Al Hasan';
+        li.innerText = 'Casemiro';
         messilist.appendChild(li);
         const btn = document.getElementById('sakib-btn');
         btn.disabled = 'true';
@@ -86,7 +86,7 @@ function getinputfieldvalue(inputid) {
     const inputfield = document.getElementById(inputid);
     const inputfildvaluestring = inputfield.value;
     const inputfildvalue = parseFloat(inputfildvaluestring)
-    inputfield.value = '';
+    // inputfield.value = '';
     if (isNaN(inputfildvalue)) {
         alert('Please enter your number value');
         return 0;
