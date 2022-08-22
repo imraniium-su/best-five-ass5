@@ -3,37 +3,57 @@ document.getElementById('messi-btn').addEventListener('click', function () {
     const li = document.createElement('li');
     li.innerText = 'Leo Messi';
     messilist.appendChild(li);
+    const btn = document.getElementById('messi-btn');
+    btn.disabled = 'true';
+    btn.style.backgroundColor = 'darkgray';
 })
 document.getElementById('ronaldo-btn').addEventListener('click', function () {
     const messilist = document.getElementById('player-list');
     const li = document.createElement('li');
     li.innerText = 'Cristiano Ronaldo';
     messilist.appendChild(li);
+    const btn = document.getElementById('ronaldo-btn');
+    btn.disabled = 'true';
+    btn.style.backgroundColor = 'darkgray';
+
 })
 document.getElementById('neymer-btn').addEventListener('click', function () {
     const messilist = document.getElementById('player-list');
     const li = document.createElement('li');
     li.innerText = 'Neymar Jr';
     messilist.appendChild(li);
+    const btn = document.getElementById('neymer-btn');
+    btn.disabled = 'true';
+    btn.style.backgroundColor = 'darkgray';
 })
 document.getElementById('sakib-btn').addEventListener('click', function () {
     const messilist = document.getElementById('player-list');
     const li = document.createElement('li');
     li.innerText = 'Shakib Al Hasan';
     messilist.appendChild(li);
+    const btn = document.getElementById('sakib-btn');
+    btn.disabled = 'true';
+    btn.style.backgroundColor = 'darkgray';
 })
 document.getElementById('mbappe-btn').addEventListener('click', function () {
     const messilist = document.getElementById('player-list');
     const li = document.createElement('li');
     li.innerText = 'Kylian Mbappé';
     messilist.appendChild(li);
+    const btn = document.getElementById('mbappe-btn');
+    btn.disabled = 'true';
+    btn.style.backgroundColor = 'darkgray';
 })
+
 
 document.getElementById('salah-btn').addEventListener('click', function () {
     const messilist = document.getElementById('player-list');
     const li = document.createElement('li');
     li.innerText = 'Mohamed Salah';
     messilist.appendChild(li);
+    const btn = document.getElementById('salah-btn');
+    btn.disabled = 'true';
+    btn.style.backgroundColor = 'darkgray';
 })
 
 function getinputfieldvalue(inputid) {
