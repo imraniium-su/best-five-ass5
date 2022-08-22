@@ -1,3 +1,15 @@
+function getinput(livalue) {
+    const playerlists = document.getElementById('player-list');
+    if (playerlists < 5) {
+        return true;
+    }
+    else {
+        alert('Youuhy');
+        return;
+    }
+
+}
+
 document.getElementById('messi-btn').addEventListener('click', function () {
     const messilist = document.getElementById('player-list');
     const li = document.createElement('li');
@@ -54,6 +66,7 @@ document.getElementById('salah-btn').addEventListener('click', function () {
     const btn = document.getElementById('salah-btn');
     btn.disabled = 'true';
     btn.style.backgroundColor = 'darkgray';
+
 })
 
 function getinputfieldvalue(inputid) {
@@ -94,7 +107,6 @@ function calculatrtotal() {
 
     const coachcost = getinputfieldvalue('input-coach');
     const totalpayment = Expence + managercost + coachcost;
-    console.log(totalpayment);
 
     setTextElementValueById('total-expence-cost', totalpayment);
 }
