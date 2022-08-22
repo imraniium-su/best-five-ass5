@@ -60,7 +60,15 @@ function getinputfieldvalue(inputid) {
     const inputfield = document.getElementById(inputid);
     const inputfildvaluestring = inputfield.value;
     const inputfildvalue = parseFloat(inputfildvaluestring)
-    // inputfield.value = '';
+    inputfield.value = '';
+    if (isNaN(inputfildvalue)) {
+        alert('Please enter your number value');
+        return;
+    }
+    else if (inputfildvalue === 'string') {
+        alert('Please enter your number value');
+        return;
+    }
     return inputfildvalue;
 }
 
