@@ -12,77 +12,67 @@ function selV() {
     }
 }
 
+function displayget(displayid) {
+    const btn = document.getElementById(displayid);
+    btn.disabled = 'true';
+    btn.style.backgroundColor = 'darkgray';
+}
+
+function getol(olid, text) {
+    const messilist = document.getElementById(olid);
+    const li = document.createElement('li');
+    messilist.appendChild(li);
+    li.innerText = text;
+    messilist.appendChild(li);
+
+}
 // player select option
 
 document.getElementById('messi-btn').addEventListener('click', function () {
     if (selV()) {
-        const messilist = document.getElementById('player-list');
-        const li = document.createElement('li');
-        li.innerText = 'Leonel Messi';
-        messilist.appendChild(li);
+        getol('player-list', 'leonel Messi');
 
         // button display none//
-        const btn = document.getElementById('messi-btn');
-        btn.disabled = 'true';
-        btn.style.backgroundColor = 'darkgray';
+        displayget('messi-btn');
+
     }
 })
 document.getElementById('ronaldo-btn').addEventListener('click', function () {
     if (selV()) {
-        const messilist = document.getElementById('player-list');
-        const li = document.createElement('li');
-        li.innerText = 'Cristiano Ronaldo';
-        messilist.appendChild(li);
-        const btn = document.getElementById('ronaldo-btn');
-        btn.disabled = 'true';
-        btn.style.backgroundColor = 'darkgray';
+        getol('player-list', 'Cristiano Ronaldo');
+
+        displayget('ronaldo-btn');
     }
 
 })
 document.getElementById('neymer-btn').addEventListener('click', function () {
     if (selV()) {
-        const messilist = document.getElementById('player-list');
-        const li = document.createElement('li');
-        li.innerText = 'Neymar Jr';
-        messilist.appendChild(li);
-        const btn = document.getElementById('neymer-btn');
-        btn.disabled = 'true';
-        btn.style.backgroundColor = 'darkgray';
+        getol('player-list', 'Neymar Jr');
+
+        displayget('neymer-btn');
     }
 })
-document.getElementById('sakib-btn').addEventListener('click', function () {
+document.getElementById('casamiro-btn').addEventListener('click', function () {
     if (selV()) {
-        const messilist = document.getElementById('player-list');
-        const li = document.createElement('li');
-        li.innerText = 'Casemiro';
-        messilist.appendChild(li);
-        const btn = document.getElementById('sakib-btn');
-        btn.disabled = 'true';
-        btn.style.backgroundColor = 'darkgray';
+        getol('player-list', 'Casamiro');
+
+        displayget('casamiro-btn')
     }
 })
 document.getElementById('mbappe-btn').addEventListener('click', function () {
     if (selV()) {
-        const messilist = document.getElementById('player-list');
-        const li = document.createElement('li');
-        li.innerText = 'Kylian Mbappé';
-        messilist.appendChild(li);
-        const btn = document.getElementById('mbappe-btn');
-        btn.disabled = 'true';
-        btn.style.backgroundColor = 'darkgray';
+        getol('player-list', 'Kylian Mbappé');
+
+        displayget('mbappe-btn');
     }
 })
 
 
 document.getElementById('salah-btn').addEventListener('click', function () {
     if (selV()) {
-        const messilist = document.getElementById('player-list');
-        const li = document.createElement('li');
-        li.innerText = 'Mohamed Salah';
-        messilist.appendChild(li);
-        const btn = document.getElementById('salah-btn');
-        btn.disabled = 'true';
-        btn.style.backgroundColor = 'darkgray';
+        getol('player-list', 'Mohamed Salah');
+
+        displayget('salah-btn');
     }
 
 })
@@ -96,11 +86,11 @@ function getinputfieldvalue(inputid) {
     // non vale and string value error message//
     if (isNaN(inputfildvalue)) {
         alert('Please enter your number value');
-        return 0;
+        return;
     }
     else if (inputfildvalue === 'string') {
         alert('Please enter your number value');
-        return 0;
+        return;
     }
     return inputfildvalue;
 }
