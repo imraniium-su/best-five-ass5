@@ -76,6 +76,30 @@ document.getElementById('salah-btn').addEventListener('click', function () {
     }
 
 })
+document.getElementById('sakib-btn').addEventListener('click', function () {
+    if (selV()) {
+        getol('player-list', 'Shakib Al Hasan');
+
+        displayget('sakib-btn');
+    }
+
+})
+document.getElementById('benzama-btn').addEventListener('click', function () {
+    if (selV()) {
+        getol('player-list', 'Karim Benzema');
+
+        displayget('benzama-btn');
+    }
+
+})
+document.getElementById('mane-btn').addEventListener('click', function () {
+    if (selV()) {
+        getol('player-list', 'Sadio Mané');
+
+        displayget('mane-btn');
+    }
+
+})
 
 // input code function
 function getinputfieldvalue(inputid) {
