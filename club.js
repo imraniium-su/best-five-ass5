@@ -110,11 +110,11 @@ function getinputfieldvalue(inputid) {
     // non vale and string value error message//
     if (isNaN(inputfildvalue)) {
         alert('Please enter your number value');
-        return;
+        return 0;
     }
     else if (inputfildvalue === 'string') {
         alert('Please enter your number value');
-        return;
+        return 0;
     }
     return inputfildvalue;
 }
